@@ -82,6 +82,8 @@ const Island = ({isRotating, setIsRotating, setCurrentStage, ...props}) =>{
         rotationSpeed.current =0;
       }
 
+      islandRef.current.rotation.y += rotationSpeed.current;
+
     }else {
       const rotation = islandRef.current.rotation.y;
 
